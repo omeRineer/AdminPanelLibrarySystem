@@ -1,0 +1,57 @@
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\bin\Debug\KütüphaneSistemi.exe.config
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\bin\Debug\KütüphaneSistemi.exe
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\bin\Debug\KütüphaneSistemi.pdb
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.AdminPaneli.resources
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.GirisPaneli.resources
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.KitapPanel.resources
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.Properties.Resources.resources
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.csproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.exe
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.pdb
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.TurPanel.resources
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.GirisY.resources
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.Kitaplık.resources
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.Yayinevleri.resources
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.csproj.CopyComplete
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.GirisK.resources
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.csproj.ResolveComReference.cache
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.PDFEkrani.resources
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\ASUS\source\repos\KütüphaneSistemi\KütüphaneSistemi\bin\Debug\AxInterop.AcroPDFLib.dll
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\bin\Debug\KütüphaneSistemi.exe.config
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\bin\Debug\KütüphaneSistemi.exe
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\bin\Debug\KütüphaneSistemi.pdb
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\bin\Debug\EntityFramework.dll
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\bin\Debug\EntityFramework.xml
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\bin\Debug\Interop.AcroPDFLib.dll
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\bin\Debug\AxInterop.AcroPDFLib.dll
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.csprojAssemblyReference.cache
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\Interop.AcroPDFLib.dll
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\AxInterop.AcroPDFLib.dll
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.csproj.ResolveComReference.cache
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.GirisK.resources
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.PDFEkrani.resources
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.TurPanel.resources
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.GirisY.resources
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.AdminPaneli.resources
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.GirisPaneli.resources
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.Kitaplık.resources
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.KitapPanel.resources
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.Properties.Resources.resources
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.Yayinevleri.resources
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.csproj.GenerateResource.cache
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.csproj.CopyComplete
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.exe
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.pdb
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.KayitP.resources
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.İstatistik.resources
+D:\Ömer Faruk\Diğer\C#\C Sharp Projeler\FORM APPS\VERİTABANLI\KütüphaneSistemi(Orijinal)\KütüphaneSistemi\obj\Debug\KütüphaneSistemi.Uye.resources

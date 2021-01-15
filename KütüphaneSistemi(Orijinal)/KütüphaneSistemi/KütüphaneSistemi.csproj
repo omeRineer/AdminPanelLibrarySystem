@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0391ACA0-1EAC-481B-91EA-21F5EEF681CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KütüphaneSistemi</RootNamespace>
+    <AssemblyName>KütüphaneSistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanıcı\KayitP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanıcı\KayitP.Designer.cs">
+      <DependentUpon>KayitP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanıcı\GirisK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanıcı\GirisK.Designer.cs">
+      <DependentUpon>GirisK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanıcı\PDFEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanıcı\PDFEkrani.Designer.cs">
+      <DependentUpon>PDFEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yönetici\Uye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yönetici\Uye.Designer.cs">
+      <DependentUpon>Uye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yönetici\TurPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yönetici\TurPanel.Designer.cs">
+      <DependentUpon>TurPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yönetici\GirisY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yönetici\GirisY.Designer.cs">
+      <DependentUpon>GirisY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yönetici\AdminPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yönetici\AdminPaneli.Designer.cs">
+      <DependentUpon>AdminPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisPaneli.Designer.cs">
+      <DependentUpon>GirisPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanıcı\Kitaplık.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanıcı\Kitaplık.Designer.cs">
+      <DependentUpon>Kitaplık.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yönetici\KitapPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yönetici\KitapPanel.Designer.cs">
+      <DependentUpon>KitapPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Yönetici\Yayinevleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yönetici\Yayinevleri.Designer.cs">
+      <DependentUpon>Yayinevleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yönetici\İstatistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yönetici\İstatistik.Designer.cs">
+      <DependentUpon>İstatistik.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Kullanıcı\KayitP.resx">
+      <DependentUpon>KayitP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanıcı\GirisK.resx">
+      <DependentUpon>GirisK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanıcı\PDFEkrani.resx">
+      <DependentUpon>PDFEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yönetici\Uye.resx">
+      <DependentUpon>Uye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yönetici\TurPanel.resx">
+      <DependentUpon>TurPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yönetici\GirisY.resx">
+      <DependentUpon>GirisY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yönetici\AdminPaneli.resx">
+      <DependentUpon>AdminPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisPaneli.resx">
+      <DependentUpon>GirisPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanıcı\Kitaplık.resx">
+      <DependentUpon>Kitaplık.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yönetici\KitapPanel.resx">
+      <DependentUpon>KitapPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Yönetici\Yayinevleri.resx">
+      <DependentUpon>Yayinevleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yönetici\İstatistik.resx">
+      <DependentUpon>İstatistik.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28407.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_delete_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_checkmark_48px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KutuphaneSistemiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'KutuphaneSistemi.dbo.ADMİN' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ADMİN">
+    <Key>
+      <PropertyRef Name="ADMİNID" />
+    </Key>
+    <Property Name="ADMİNID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ADMİNAD" Type="varchar" MaxLength="20" />
+    <Property Name="ADMİNSİFRE" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="KİTAP">
+    <Key>
+      <PropertyRef Name="KİTAPID" />
+    </Key>
+    <Property Name="KİTAPID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KİTAPAD" Type="varchar" MaxLength="60" />
+    <Property Name="KİTAPTUR" Type="tinyint" />
+    <Property Name="YAZAR" Type="varchar" MaxLength="30" />
+    <Property Name="YAYINEVİ" Type="tinyint" />
+    <Property Name="BARKODNO" Type="char" MaxLength="13" />
+    <Property Name="DURUM" Type="bit" />
+    <Property Name="KİSİ" Type="int" />
+    <Property Name="TARİH" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="KULLANİCİ">
+    <Key>
+      <PropertyRef Name="KULLANİCİID" />
+    </Key>
+    <Property Name="KULLANİCİID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KULLANİCİAD" Type="varchar" MaxLength="15" />
+    <Property Name="KULLANİCİSİFRE" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="TUR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TUR" Type="varchar" MaxLength="20" />
+    <Property Name="ADET" Type="smallint" />
+  </EntityType>
+  <EntityType Name="YAYİNEVİ">
+    <Key>
+      <PropertyRef Name="YAYINEVİID" />
+    </Key>
+    <Property Name="YAYINEVİID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="YAYINEVİAD" Type="varchar" MaxLength="40" />
+    <Property Name="ADET" Type="smallint" />
+  </EntityType>
+  <Association Name="FK_KİTAP_KULLANİCİ">
+    <End Role="KULLANİCİ" Type="Self.KULLANİCİ" Multiplicity="0..1" />
+    <End Role="KİTAP" Type="Self.KİTAP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KULLANİCİ">
+        <PropertyRef Name="KULLANİCİID" />
+      </Principal>
+      <Dependent Role="KİTAP">
+        <PropertyRef Name="KİSİ" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KİTAP_Tur">
+    <End Role="TUR" Type="Self.TUR" Multiplicity="0..1" />
+    <End Role="KİTAP" Type="Self.KİTAP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="KİTAP">
+        <PropertyRef Name="KİTAPTUR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KİTAP_YAYİNEVİ">
+    <End Role="YAYİNEVİ" Type="Self.YAYİNEVİ" Multiplicity="0..1" />
+    <End Role="KİTAP" Type="Self.KİTAP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="YAYİNEVİ">
+        <PropertyRef Name="YAYINEVİID" />
+      </Principal>
+      <Dependent Role="KİTAP">
+        <PropertyRef Name="YAYINEVİ" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="KutuphaneSistemiModelStoreContainer">
+    <EntitySet Name="KİTAP" EntityType="Self.KİTAP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KULLANİCİ" EntityType="Self.KULLANİCİ" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TUR" EntityType="Self.TUR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="YAYİNEVİ" EntityType="Self.YAYİNEVİ" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ADMİN" EntityType="Self.ADMİN" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ADMİN].[ADMİNID] AS [ADMİNID], 
+    [ADMİN].[ADMİNAD] AS [ADMİNAD], 
+    [ADMİN].[ADMİNSİFRE] AS [ADMİNSİFRE]
+    FROM [dbo].[ADMİN] AS [ADMİN]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_KİTAP_KULLANİCİ" Association="Self.FK_KİTAP_KULLANİCİ">
+      <End Role="KULLANİCİ" EntitySet="KULLANİCİ" />
+      <End Role="KİTAP" EntitySet="KİTAP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KİTAP_Tur" Association="Self.FK_KİTAP_Tur">
+      <End Role="TUR" EntitySet="TUR" />
+      <End Role="KİTAP" EntitySet="KİTAP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KİTAP_YAYİNEVİ" Association="Self.FK_KİTAP_YAYİNEVİ">
+      <End Role="YAYİNEVİ" EntitySet="YAYİNEVİ" />
+      <End Role="KİTAP" EntitySet="KİTAP" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

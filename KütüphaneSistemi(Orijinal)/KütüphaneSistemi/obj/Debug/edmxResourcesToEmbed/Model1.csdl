@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KutuphaneSistemiModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="KİTAP">
+    <Key>
+      <PropertyRef Name="KİTAPID" />
+    </Key>
+    <Property Name="KİTAPID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KİTAPAD" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="KİTAPTUR" Type="Byte" />
+    <Property Name="YAZAR" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="YAYINEVİ" Type="Byte" />
+    <Property Name="BARKODNO" Type="String" MaxLength="13" FixedLength="true" Unicode="false" />
+    <Property Name="DURUM" Type="Boolean" />
+    <Property Name="KİSİ" Type="Int32" />
+    <Property Name="TARİH" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="KULLANİCİ" Relationship="Self.FK_KİTAP_KULLANİCİ" FromRole="KİTAP" ToRole="KULLANİCİ" />
+    <NavigationProperty Name="TUR" Relationship="Self.FK_KİTAP_Tur" FromRole="KİTAP" ToRole="TUR" />
+    <NavigationProperty Name="YAYİNEVİ" Relationship="Self.FK_KİTAP_YAYİNEVİ" FromRole="KİTAP" ToRole="YAYİNEVİ" />
+  </EntityType>
+  <EntityType Name="KULLANİCİ">
+    <Key>
+      <PropertyRef Name="KULLANİCİID" />
+    </Key>
+    <Property Name="KULLANİCİID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KULLANİCİAD" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="KULLANİCİSİFRE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="KİTAP" Relationship="Self.FK_KİTAP_KULLANİCİ" FromRole="KULLANİCİ" ToRole="KİTAP" />
+  </EntityType>
+  <EntityType Name="TUR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ADET" Type="Int16" />
+    <NavigationProperty Name="KİTAP" Relationship="Self.FK_KİTAP_Tur" FromRole="TUR" ToRole="KİTAP" />
+    <Property Name="TURAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="YAYİNEVİ">
+    <Key>
+      <PropertyRef Name="YAYINEVİID" />
+    </Key>
+    <Property Name="YAYINEVİID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="YAYINEVİAD" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="ADET" Type="Int16" />
+    <NavigationProperty Name="KİTAP" Relationship="Self.FK_KİTAP_YAYİNEVİ" FromRole="YAYİNEVİ" ToRole="KİTAP" />
+  </EntityType>
+  <EntityType Name="ADMİN">
+    <Key>
+      <PropertyRef Name="ADMİNID" />
+    </Key>
+    <Property Name="ADMİNID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ADMİNAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ADMİNSİFRE" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_KİTAP_KULLANİCİ">
+    <End Role="KULLANİCİ" Type="Self.KULLANİCİ" Multiplicity="0..1" />
+    <End Role="KİTAP" Type="Self.KİTAP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KULLANİCİ">
+        <PropertyRef Name="KULLANİCİID" />
+      </Principal>
+      <Dependent Role="KİTAP">
+        <PropertyRef Name="KİSİ" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KİTAP_Tur">
+    <End Role="TUR" Type="Self.TUR" Multiplicity="0..1" />
+    <End Role="KİTAP" Type="Self.KİTAP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="KİTAP">
+        <PropertyRef Name="KİTAPTUR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KİTAP_YAYİNEVİ">
+    <End Role="YAYİNEVİ" Type="Self.YAYİNEVİ" Multiplicity="0..1" />
+    <End Role="KİTAP" Type="Self.KİTAP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="YAYİNEVİ">
+        <PropertyRef Name="YAYINEVİID" />
+      </Principal>
+      <Dependent Role="KİTAP">
+        <PropertyRef Name="YAYINEVİ" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="KutuphaneSistemiEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="KİTAP" EntityType="Self.KİTAP" />
+    <EntitySet Name="KULLANİCİ" EntityType="Self.KULLANİCİ" />
+    <EntitySet Name="TUR" EntityType="Self.TUR" />
+    <EntitySet Name="YAYİNEVİ" EntityType="Self.YAYİNEVİ" />
+    <EntitySet Name="ADMİN" EntityType="Self.ADMİN" />
+    <AssociationSet Name="FK_KİTAP_KULLANİCİ" Association="Self.FK_KİTAP_KULLANİCİ">
+      <End Role="KULLANİCİ" EntitySet="KULLANİCİ" />
+      <End Role="KİTAP" EntitySet="KİTAP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KİTAP_Tur" Association="Self.FK_KİTAP_Tur">
+      <End Role="TUR" EntitySet="TUR" />
+      <End Role="KİTAP" EntitySet="KİTAP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KİTAP_YAYİNEVİ" Association="Self.FK_KİTAP_YAYİNEVİ">
+      <End Role="YAYİNEVİ" EntitySet="YAYİNEVİ" />
+      <End Role="KİTAP" EntitySet="KİTAP" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

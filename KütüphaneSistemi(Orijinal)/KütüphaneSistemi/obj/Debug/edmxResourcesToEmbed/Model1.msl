@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KutuphaneSistemiModel1StoreContainer" CdmEntityContainer="KutuphaneSistemiEntities1">
+    <EntitySetMapping Name="KİTAP">
+      <EntityTypeMapping TypeName="KutuphaneSistemiModel1.KİTAP">
+        <MappingFragment StoreEntitySet="KİTAP">
+          <ScalarProperty Name="KİTAPID" ColumnName="KİTAPID" />
+          <ScalarProperty Name="KİTAPAD" ColumnName="KİTAPAD" />
+          <ScalarProperty Name="KİTAPTUR" ColumnName="KİTAPTUR" />
+          <ScalarProperty Name="YAZAR" ColumnName="YAZAR" />
+          <ScalarProperty Name="YAYINEVİ" ColumnName="YAYINEVİ" />
+          <ScalarProperty Name="BARKODNO" ColumnName="BARKODNO" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+          <ScalarProperty Name="KİSİ" ColumnName="KİSİ" />
+          <ScalarProperty Name="TARİH" ColumnName="TARİH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KULLANİCİ">
+      <EntityTypeMapping TypeName="KutuphaneSistemiModel1.KULLANİCİ">
+        <MappingFragment StoreEntitySet="KULLANİCİ">
+          <ScalarProperty Name="KULLANİCİID" ColumnName="KULLANİCİID" />
+          <ScalarProperty Name="KULLANİCİAD" ColumnName="KULLANİCİAD" />
+          <ScalarProperty Name="KULLANİCİSİFRE" ColumnName="KULLANİCİSİFRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TUR">
+      <EntityTypeMapping TypeName="KutuphaneSistemiModel1.TUR">
+        <MappingFragment StoreEntitySet="TUR">
+          <ScalarProperty Name="TURAD" ColumnName="TURAD" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ADET" ColumnName="ADET" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YAYİNEVİ">
+      <EntityTypeMapping TypeName="KutuphaneSistemiModel1.YAYİNEVİ">
+        <MappingFragment StoreEntitySet="YAYİNEVİ">
+          <ScalarProperty Name="YAYINEVİID" ColumnName="YAYINEVİID" />
+          <ScalarProperty Name="YAYINEVİAD" ColumnName="YAYINEVİAD" />
+          <ScalarProperty Name="ADET" ColumnName="ADET" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ADMİN">
+      <EntityTypeMapping TypeName="KutuphaneSistemiModel1.ADMİN">
+        <MappingFragment StoreEntitySet="ADMİN">
+          <ScalarProperty Name="ADMİNID" ColumnName="ADMİNID" />
+          <ScalarProperty Name="ADMİNAD" ColumnName="ADMİNAD" />
+          <ScalarProperty Name="ADMİNSİFRE" ColumnName="ADMİNSİFRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
